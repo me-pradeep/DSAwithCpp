@@ -2,16 +2,15 @@
 using namespace std;
 
 void printName(int counter,int N){
-    if(counter>=N){
+    if(counter>N){
         return;
     }
     cout<<"Ram"<<endl;
-    counter++;
-    printName(counter,5);
+    printName(counter+1,5);
 }
 
 int main(){
-    int counter=0;
+    int counter=1;
     printName(counter,5);
 }
 
