@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-//Normally
+//Tail Recurison
 void printNto1(int i,int N){
     if(i<1){
         return;
@@ -17,8 +16,7 @@ int main(){
     return 0;
 }
 
-
-// Using backtracking
+Head Recurison
 void printNto1b(int i,int N){
     if(i>N){
         return;
