@@ -43,12 +43,15 @@ vector<int> optimalGetUnion(vector<int>& arr1 , vector<int>& arr2){
             ind2++;
         }
     }
-    while(ind1<size1){
-        ans.push_back(arr1[ind1]);
+    while (ind1 < size1) {
+        if (ans.empty() || ans.back() != arr1[ind1])
+            ans.push_back(arr1[ind1]);
         ind1++;
     }
-    while(ind2<size2){
-        ans.push_back(arr2[ind2]);
+
+    while (ind2 < size2) {
+        if (ans.empty() || ans.back() != arr2[ind2])
+            ans.push_back(arr2[ind2]);
         ind2++;
     }
     return ans;
