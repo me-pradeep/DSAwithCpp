@@ -23,7 +23,7 @@ int longestSubArray(int target,vector<int>& arr){
     return longestSubArray;
 }
 
-//Optimal approach using array-hashing format
+//Optimal approach using hashing
 int OptilongestSubArray(int target, vector<int>& arr){
     map<int,int> mpp;
     int maxLen=0;
