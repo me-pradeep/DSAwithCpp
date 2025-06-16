@@ -16,7 +16,6 @@ int longestSubArray(int target,vector<int>& arr){
                 if(count>longestSubArray){
                    longestSubArray=count; 
                 }
-                break;
             }
         }
     }

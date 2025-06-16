@@ -26,7 +26,7 @@ vector<vector<int>> triplet(vector<int>& nums){
     return ans;
 }
 
-//
+//0(n^2) time complexity approach
 vector<vector<int>> optimalTriplet(vector<int> nums) {
     vector<vector<int>> triplets;
     sort(nums.begin(), nums.end());
@@ -55,7 +55,6 @@ vector<vector<int>> optimalTriplet(vector<int> nums) {
 
     return triplets;
 }
-
 
 int main(){
     vector<int> nums={-1,0,1,2,-1,-4};
