@@ -15,6 +15,7 @@ int longestSubArray(int target,vector<int>& arr){
             if(currSum==target){
                 if(count>longestSubArray){
                    longestSubArray=count; 
+                   //No break statement , because for " target=0 and 1 -2 2 3 -3 6 2 " , if we break for -2 2 , then it's wrong because -2 2 3 -3 is largest sub array having sum 0
                 }
             }
         }
