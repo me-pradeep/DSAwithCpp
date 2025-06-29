@@ -10,7 +10,7 @@ int lowerBound(vector<int>& arr,int target){
     while(start<=end){
         int mid=(start+end)/2;
         if(arr[mid]>=target){
-            LB=min(LB,mid);
+            LB=mid;
             end=mid-1;
         }
         else{
@@ -28,7 +28,7 @@ int upperBound(vector<int>& arr,int target){
     while(start<=end){
         int mid=(start+end)/2;
         if(arr[mid]>target){
-            UB=min(UB,mid);
+            UB=mid;
             end=mid-1;
         }
         else{
@@ -40,7 +40,7 @@ int upperBound(vector<int>& arr,int target){
 
 int main(){
     vector<int> arr={3,5,8,15,19};
-    int LB=lowerBound(arr,20);
-    int UB=upperBound(arr,20);
+    int LB=lowerBound(arr,8);
+    int UB=upperBound(arr,8);
     cout<<LB<<UB;
 }
