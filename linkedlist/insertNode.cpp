@@ -12,7 +12,7 @@ struct Node{
     }
 };
 
-void printLL(Node* head){
+void printLL(Node* &head){
     Node* temp=head;
     while(temp){
         cout<<temp->data<<" ";
